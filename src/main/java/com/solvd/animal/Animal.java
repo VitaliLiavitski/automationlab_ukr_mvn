@@ -8,16 +8,15 @@ public class Animal {
 	
 	private String name;
 	private int id;
+	private Place place;
 	
 	
 	public String getName() {
-		LOGGER.info(this.name);
 		return name;
 	}
 	
 	public void setName(String name) {
 		this.name = name;
-		LOGGER.debug(this.name);
 	}
 	
 	public int getId() {
@@ -26,6 +25,14 @@ public class Animal {
 	
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public Place getPlace() {
+		return place;
+	}
+
+	public void setPlace(Place place) {
+		this.place = place;
 	}
 	
 }
